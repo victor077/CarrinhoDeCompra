@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.shopping{
+    padding: 2em ;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.titulo
+{
+    padding: 0 0 1em 10em;
+}
+.Bainner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    width: 80%;
+}
+.Tenis 
+{
+ width: 100px;
+ height: 100px;   
+ border-radius: 70%;
+}
+
+.imagemProduto{
+    display: flex;
+    padding: 2em;
+}
+
+.texto{
+    padding: 15px 0 0 30px;
+}
+.texto .prod{
+     margin-bottom: 20px; 
+     
+}
+
+.carrinho{
+    margin-left: 600px;
+    margin-top: 15px;
+    width: 180px;
+
+
+}
