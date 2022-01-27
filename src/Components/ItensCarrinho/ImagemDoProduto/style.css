@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-.btn{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1em;
-}
-
 .shopping{
     padding: 2em ;
     display: flex;
@@ -53,6 +47,4 @@
     margin-left: 600px;
     margin-top: 15px;
     width: 180px;
-
-
 }

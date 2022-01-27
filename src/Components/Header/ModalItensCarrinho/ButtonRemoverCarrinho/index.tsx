@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@mui/material/Button";
+import Button from "@newcon/ui/Button";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const ButtonRemoverCarrinho = () => {

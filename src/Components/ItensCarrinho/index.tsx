@@ -1,78 +1,33 @@
 import React from "react";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import ImagemDoProduto from "../ItensCarrinho/ImagemDoProduto"
+import Paper from "@newcon/ui/Paper";
+import Typography from "@newcon/ui/Typography";
+import ImagemDoProduto from "../ItensCarrinho/ImagemDoProduto";
 import BottuonAdicionarCarrinho from "../ItensCarrinho/BottuonAdicionarCarrinho";
-import "../ItensCarrinho/ImagemDoProduto/style.css";
-import Box from "@mui/material/Box";
+import Box from "@newcon/ui/Box";
+import useStyles from "../ItensCarrinho/ImagemDoProduto/style"
 
 
+type Produtosprops = {
+  id?: number;
+  title?: string;
+  price?: number;
+  picture?: string;
+};
 
-
-const ItensCarrinho = () => {
+const ItensCarrinho = ({ title, price }: Produtosprops) => {
+  const classes = useStyles();
   return (
     <Box>
-      <Box className="titulo">
-        <Typography variant="h4">Lista de Produtos</Typography>
-      </Box>
-
-      <Box className="Bainner">
+      <Box className={classes.Bainner}>
         <Paper className="container" elevation={3}>
           <Box className="imagemProduto">
             <ImagemDoProduto />
             <Box className="texto">
-              <Typography className="prod">Nome do Produto:</Typography>
-              <Typography>Preço:</Typography>
+              <Typography className="prod">{title}</Typography>
+              <Typography>${price}</Typography>
             </Box>
             <Box className="carrinho">
               <BottuonAdicionarCarrinho />
-            </Box>
-            <Box>
-            </Box>
-          </Box>
-        </Paper>
-      </Box>
-
-      <Box className="Bainner">
-        <Paper className="container" elevation={3}>
-          <Box className="imagemProduto">
-          <ImagemDoProduto />
-            <Box className="texto">
-              <Typography className="prod">Nome do Produto:</Typography>
-              <Typography>Preço:</Typography>
-            </Box>
-            <Box className="carrinho">
-            <BottuonAdicionarCarrinho />
-            </Box>
-          </Box>
-        </Paper>
-      </Box>
-
-      <Box className="Bainner">
-        <Paper className="container" elevation={3}>
-          <Box className="imagemProduto">
-          <ImagemDoProduto />
-            <Box className="texto">
-              <Typography className="prod">Nome do Produto:</Typography>
-              <Typography>Preço:</Typography>
-            </Box>
-            <Box className="carrinho">
-            <BottuonAdicionarCarrinho />
-            </Box>
-          </Box>
-        </Paper>
-      </Box>
-
-      <Box className="Bainner">
-        <Paper className="container" elevation={3}>
-          <Box className="imagemProduto">
-          <ImagemDoProduto />
-            <Box className="texto">
-              <Typography className="prod">Nome do Produto:</Typography>
-              <Typography>Preço:</Typography>
-            </Box>
-            <Box className="carrinho">
-            <BottuonAdicionarCarrinho />
             </Box>
           </Box>
         </Paper>
